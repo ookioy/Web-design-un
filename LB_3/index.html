@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор Чайових</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <h1>Калькулятор Чайових</h1>
+
+        <p>Сума рахунку:</p>
+        <input type="number" id="bill" placeholder="0">
+        <div id="bill-error" class="error"></div>
+
+        <p>Виберіть відсоток:</p>
+        <div class="buttons">
+            <button onclick="setTip(5)">5%</button>
+            <button onclick="setTip(10)">10%</button>
+            <button onclick="setTip(15)">15%</button>
+            <button onclick="setTip(20)">20%</button>
+            <button onclick="setTip(50)">50%</button>
+        </div>
+        <input type="number" id="customTip" placeholder="Свій %" style="margin-top: 5px;">
+        <div id="tip-error" class="error"></div>
+
+        <p>Кількість людей:</p>
+        <input type="number" id="people" placeholder="1">
+        <div id="people-error" class="error"></div>
+
+        <hr>
+
+        <div class="results">
+            <p>Чайові на одного: <b id="tip-per-person">0.00</b> грн</p>
+            <p>Всього на одного: <b id="total-per-person">0.00</b> грн</p>
+        </div>
+
+        <button id="reset" onclick="resetCalc()">Очистити</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

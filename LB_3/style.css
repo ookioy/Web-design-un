@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 300px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    height: 15px;
+}
+
+button {
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00474b;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #26c2ae;
+}
+
+#reset {
+    width: 100%;
+    margin-top: 20px;
+    background-color: darkred;
+}
+
+.results p {
+    font-size: 18px;
+    margin: 10px 0;
+}
